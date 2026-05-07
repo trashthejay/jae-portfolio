@@ -4,36 +4,56 @@ export interface Project {
   description: string
   tags: string[]
   link: string | null
-  status: 'live' | 'coming-soon'
+  status: 'completed' | 'in-progress' | 'coming-soon'
+  private?: boolean
 }
 
 export const works: Project[] = [
   {
     id: 'ux-cx-analysis',
-    title: 'UX/CX Analysis Tool',
+    title: 'UX/CX Analysis Platform',
     description:
-      'AI-powered product page evaluator using Claude and Gemini vision models to assess usability, conversion likelihood, and PDP content completeness — compressing discovery cycles without engineering resources.',
-    tags: ['Claude API', 'Gemini', 'Python', 'AI Prototyping', 'UX Research'],
-    link: 'https://github.com/trashthejay/chanyang',
-    status: 'live',
+      '5-step Claude Vision pipeline · A/B variant comparison · HTML & PPTX export · 35-pattern competitor library (Amazon, Apple, Target, TikTok)',
+    tags: ['Claude API', 'Gemini', 'Next.js', 'SQLite', 'Playwright', 'A/B Testing', 'PPTX Export'],
+    link: 'https://github.com/vzchung/ux-platform',
+    status: 'in-progress',
+    private: true,
   },
   {
     id: 'donation-matcher',
     title: 'Donation Matcher',
     description:
-      'Client-side web app that reconciles Chase Zelle CSV exports against PDF bank records using fuzzy name matching, date/amount tolerance, and outputs a styled XLSX with diagnostic failure reasons.',
+      'Zelle CSV × PDF bank record reconciliation · Fuzzy name + date + amount matching · XLSX output with diagnostic failure reasons',
     tags: ['JavaScript', 'Fuzzy Matching', 'XLSX', 'PDF Parsing', 'No-backend'],
-    link: 'https://github.com/trashthejay/family-finance',
-    status: 'live',
+    link: 'https://github.com/trashthejay/chanyang',
+    status: 'completed',
   },
   {
     id: 'sunday-ride',
     title: 'Sunday Ride Coordinator',
     description:
-      'Google Apps Script system that reads a Google Sheet, groups riders by pickup stop across two vehicles, detects new members, and sends formatted HTML email summaries — replacing 100% manual coordination.',
-    tags: ['Google Apps Script', 'HTML Email', 'Automation', 'Google Sheets'],
+      'Google Sheet → auto-grouped vehicles → formatted HTML email · New member (새신자) detection · Zero manual coordination',
+    tags: ['Google Apps Script', 'Automation', 'Google Sheets', 'HTML Email'],
     link: 'https://github.com/trashthejay/ride-automation',
-    status: 'live',
+    status: 'in-progress',
+  },
+  {
+    id: 'inklings',
+    title: 'Inklings',
+    description:
+      'Voice & text note capture with Claude AI auto-classification · Confidence thresholds · Interactive force-directed mind map · iOS / Android / macOS',
+    tags: ['Flutter', 'Claude Haiku API', 'Riverpod', 'Drift ORM', 'Mind Map', 'Voice Input'],
+    link: 'https://github.com/trashthejay/inklings',
+    status: 'in-progress',
+  },
+  {
+    id: 'buzzing-bird',
+    title: 'Buzzing Bird',
+    description:
+      'Church career mentorship platform · Member directory · 3-step onboarding wizard · Admin approval queue · Connection requests with hidden contact reveal',
+    tags: ['Next.js 14', 'Firebase', 'TypeScript', 'Tailwind CSS', 'Community App'],
+    link: 'https://github.com/trashthejay/Buzzing-Bird',
+    status: 'in-progress',
   },
   {
     id: 'next-project',

@@ -4,6 +4,7 @@ export interface Experience {
   period: string
   current: boolean
   highlights: string[]
+  tags: string[]
 }
 
 export const experiences: Experience[] = [
@@ -12,6 +13,7 @@ export const experiences: Experience[] = [
     title: 'Senior Product Manager, Next Generation Products & Platforms',
     period: 'Nov 2024 – Present',
     current: true,
+    tags: ['AI/ML', 'Omnichannel'],
     highlights: [
       'Led omnichannel marketplace transformation (Project Elysium), delivering $69.2M direct revenue in 5 months.',
       'Drove AI-powered personalization that increased perk attachment 62.2% YoY.',
@@ -23,6 +25,7 @@ export const experiences: Experience[] = [
     title: 'Product Engineer, Consumer Innovation',
     period: 'Sep 2021 – Oct 2024',
     current: false,
+    tags: ['0→1', 'AR/VR', 'Edge AI'],
     highlights: [
       '0→1 incubation of emerging platforms: Home Automation, OTT, AR/VR.',
       'Evaluated 20+ venture-stage technologies for strategic fit and buildability.',
@@ -31,13 +34,14 @@ export const experiences: Experience[] = [
   },
   {
     company: 'Verizon',
-    title: 'Product Manager, CCaaS',
+    title: 'Product Manager, CCaaS & Business Messaging',
     period: 'Sep 2019 – Sep 2021',
     current: false,
+    tags: ['CCaaS', 'Messaging'],
     highlights: [
-      'Launched 0→1 cloud Contact Center product for SMB — from concept to commercial availability.',
-      'Led 15+ cross-functional teams across engineering, design, legal, and sales.',
-      'Delivered 20+ regional training sessions to drive commercial readiness.',
+      'Launched 0→1 cloud Contact Center (CCaaS) product for SMB — from concept to commercial GA.',
+      'Drove Business Messaging product integration across A2P SMS and RCS carrier channels.',
+      'Led 15+ cross-functional teams; delivered 20+ regional training sessions for commercial readiness.',
     ],
   },
   {
@@ -45,6 +49,7 @@ export const experiences: Experience[] = [
     title: 'Lead Manager, Global Messaging Services',
     period: 'Dec 2018 – Sep 2019',
     current: false,
+    tags: ['A2P SMS', 'RCS', 'International'],
     highlights: [
       'Defined product vision for SMS/RCS API platform across enterprise segments.',
       'Drove international marketplace adoption and partner ecosystem growth.',
@@ -55,6 +60,7 @@ export const experiences: Experience[] = [
     title: 'Senior Product Manager, Messaging Services',
     period: 'Feb 2010 – Nov 2018',
     current: false,
+    tags: ['Carrier Services', 'MVNO', 'A2P SMS'],
     highlights: [
       'Achieved 270% quarterly profit growth through product repositioning.',
       'Owned A2P SMS product across global segments; conducted competitive intelligence on Twilio, LINE, and OTT players.',
@@ -65,6 +71,7 @@ export const experiences: Experience[] = [
     title: 'Medical Data Analyst',
     period: 'Jan 2008 – Jan 2010',
     current: false,
+    tags: ['Medical Data', 'FDA'],
     highlights: [
       'Processed FDA clinical trial data to ADaM/SDTM standards using SAS and SQL.',
       'Produced define.xml submissions for regulatory filings.',

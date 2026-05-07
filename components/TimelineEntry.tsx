@@ -29,7 +29,18 @@ export default function TimelineEntry({ exp, index }: Props) {
 
       {/* Right: content */}
       <div className="pb-10">
-        <p className="text-xs text-zinc-400 mb-0.5">{exp.period}</p>
+        {/* Date + domain tags */}
+        <div className="flex flex-wrap items-center gap-2 mb-0.5">
+          <p className="text-xs text-zinc-400">{exp.period}</p>
+          {exp.tags.map((tag) => (
+            <span
+              key={tag}
+              className="text-xs text-zinc-400 bg-zinc-100 rounded-full px-2 py-0.5"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
         <h3 className="font-semibold text-zinc-900">{exp.company}</h3>
         <p className="text-sm text-zinc-600 mb-3">{exp.title}</p>
         <ul className="space-y-1">
