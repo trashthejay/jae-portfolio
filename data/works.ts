@@ -29,6 +29,15 @@ export const works: Project[] = [
     status: 'completed',
   },
   {
+    id: 'family-finance',
+    title: 'Family Finance',
+    description:
+      'Self-hosted personal finance dashboard · Plaid bank sync (12,000+ banks) · Multi-owner transactions · Auto-categorization rules · Subscription detection · Anomaly alerts · Net worth tracking',
+    tags: ['Next.js', 'Plaid API', 'SQLite', 'Drizzle ORM', 'NextAuth', 'Recharts', 'Fly.io'],
+    link: 'https://github.com/trashthejay/family-finance',
+    status: 'in-progress',
+  },
+  {
     id: 'sunday-ride',
     title: 'Sunday Ride Coordinator',
     description:
