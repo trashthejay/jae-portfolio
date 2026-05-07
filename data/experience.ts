@@ -17,7 +17,7 @@ export const experiences: Experience[] = [
     highlights: [
       'Led omnichannel marketplace transformation (Project Elysium), delivering $69.2M direct revenue in 5 months.',
       'Drove AI-powered personalization that increased perk attachment 62.2% YoY.',
-      'Independently prototyped UX/CX analysis tool using Claude and Gemini — zero engineering resources required.',
+      'Independently built UX/CX Analysis Platform (5-step Claude Vision pipeline, A/B variant comparison, 35-pattern competitor library) — zero engineering resources, deployed internally at Verizon.',
     ],
   },
   {

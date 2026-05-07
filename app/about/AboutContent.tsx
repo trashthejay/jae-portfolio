@@ -35,6 +35,8 @@ const skillGroups = [
       'AWS QuickSight',
       'Flutter',
       'Next.js',
+      'Firebase',
+      'Plaid API',
     ],
   },
 ]
@@ -81,9 +83,10 @@ export default function AboutContent() {
             single quarter.
           </p>
           <p>
-            He doesn&apos;t just define roadmaps — he builds AI-powered prototypes to validate ideas before
-            engineering ever gets involved. That means faster decisions, less waste, and products that
-            actually get used.
+            He doesn&apos;t just define roadmaps — he ships. Outside of Verizon he&apos;s built a self-hosted
+            family finance dashboard with Plaid bank sync, a Flutter note app with Claude AI
+            classification, a church career mentorship platform on Firebase, and an AI-powered UX
+            analysis tool used internally at Verizon — all independently, without a team.
           </p>
         </div>
       </motion.section>
