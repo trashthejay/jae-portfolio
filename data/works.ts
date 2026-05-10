@@ -86,6 +86,18 @@ export const works: Project[] = [
     status: 'in-progress',
   },
   {
+    id: 'jae-portfolio',
+    title: 'This Portfolio',
+    problem:
+      'Most PM portfolios are static PDFs or generic LinkedIn pages — they tell, not show.',
+    description:
+      'Built a live portfolio with Next.js App Router, Tailwind CSS, and Framer Motion: animated hero with cycling roles, filterable project cards, vertical experience timeline, and a working contact form via Web3Forms. Deployed on Vercel.',
+    thumbnail: 'https://opengraph.github.com/trashthejay/jae-portfolio',
+    tags: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'Web3Forms', 'Vercel'],
+    link: 'https://github.com/trashthejay/jae-portfolio',
+    status: 'completed',
+  },
+  {
     id: 'next-project',
     title: 'Next Project',
     problem: 'Currently building with Claude Code. Stay tuned.',
