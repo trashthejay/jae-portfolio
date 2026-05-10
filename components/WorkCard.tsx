@@ -39,61 +39,89 @@ export default function WorkCard({ project }: { project: Project }) {
     <motion.div
       whileHover={{ y: -4 }}
       transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-      className="border border-zinc-200 rounded-xl p-6 flex flex-col gap-4 hover:border-teal-600 transition-colors h-full"
+      className="border border-zinc-200 rounded-xl overflow-hidden flex flex-col hover:border-teal-600 transition-colors h-full"
     >
-      <div className="flex-1">
-        {/* Title row */}
-        <div className="flex items-start justify-between gap-2 mb-2">
-          <h3 className="font-semibold text-zinc-900 leading-snug">{project.title}</h3>
-          <div className="shrink-0 mt-0.5">
-            {isComingSoon ? (
-              <span className="text-xs text-zinc-400 italic">Coming soon</span>
-            ) : (
-              <StatusBadge status={project.status} />
-            )}
+      {/* Thumbnail */}
+      {project.thumbnail ? (
+        <img
+          src={project.thumbnail}
+          alt={project.title}
+          className="w-full h-36 object-cover bg-zinc-100"
+          loading="lazy"
+        />
+      ) : (
+        <div className="w-full h-36 bg-gradient-to-br from-teal-50 to-teal-100 flex items-center justify-center shrink-0">
+          <span className="text-3xl text-teal-300">✦</span>
+        </div>
+      )}
+
+      {/* Card body */}
+      <div className="p-6 flex flex-col gap-4 flex-1">
+        <div className="flex-1">
+          {/* Title row */}
+          <div className="flex items-start justify-between gap-2 mb-2">
+            <h3 className="font-semibold text-zinc-900 leading-snug">{project.title}</h3>
+            <div className="shrink-0 mt-0.5">
+              {isComingSoon ? (
+                <span className="text-xs text-zinc-400 italic">Coming soon</span>
+              ) : (
+                <StatusBadge status={project.status} />
+              )}
+            </div>
           </div>
+
+          {/* Private label */}
+          {project.private && (
+            <div className="flex items-center gap-1 text-xs text-zinc-400 mb-3">
+              <LockIcon />
+              <span>Private / Internal Tool</span>
+            </div>
+          )}
+
+          {/* Pain point */}
+          <p className="text-sm text-zinc-400 leading-relaxed italic mb-2">{project.problem}</p>
+
+          {/* Solution */}
+          {project.description && (
+            <p className="text-sm text-zinc-500 leading-relaxed">{project.description}</p>
+          )}
+
+          {/* Optional callout (e.g. internal tool CTA) */}
+          {project.cta && (
+            <p className="text-xs text-teal-600 font-medium mt-2">{project.cta}</p>
+          )}
         </div>
 
-        {/* Private label */}
-        {project.private && (
-          <div className="flex items-center gap-1 text-xs text-zinc-400 mb-2">
-            <LockIcon />
-            <span>Private / Internal Tool</span>
-          </div>
-        )}
+        {/* Tags */}
+        <div className="flex flex-wrap gap-1.5">
+          {project.tags.map((tag) => (
+            <span
+              key={tag}
+              className="text-xs bg-zinc-100 text-zinc-600 rounded-full px-2.5 py-1"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
 
-        <p className="text-sm text-zinc-500 leading-relaxed">{project.description}</p>
-      </div>
-
-      {/* Tags */}
-      <div className="flex flex-wrap gap-1.5">
-        {project.tags.map((tag) => (
-          <span
-            key={tag}
-            className="text-xs bg-zinc-100 text-zinc-600 rounded-full px-2.5 py-1"
+        {/* Link */}
+        {project.link && !project.private && (
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-teal-600 hover:text-teal-700 font-medium transition-colors self-start"
           >
-            {tag}
+            View Project →
+          </a>
+        )}
+        {project.link && project.private && (
+          <span className="flex items-center gap-1.5 text-sm text-zinc-400 self-start">
+            <LockIcon />
+            Private / Internal
           </span>
-        ))}
+        )}
       </div>
-
-      {/* Link */}
-      {project.link && !project.private && (
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm text-teal-600 hover:text-teal-700 font-medium transition-colors self-start"
-        >
-          View Project →
-        </a>
-      )}
-      {project.link && project.private && (
-        <span className="flex items-center gap-1.5 text-sm text-zinc-400 self-start">
-          <LockIcon />
-          Private / Internal
-        </span>
-      )}
     </motion.div>
   )
 }
