@@ -39,24 +39,9 @@ export default function WorkCard({ project }: { project: Project }) {
     <motion.div
       whileHover={{ y: -4 }}
       transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-      className="border border-zinc-200 rounded-xl overflow-hidden flex flex-col hover:border-teal-600 transition-colors h-full"
+      className="border border-zinc-200 rounded-xl p-6 flex flex-col gap-4 hover:border-teal-600 transition-colors h-full"
     >
-      {/* Thumbnail */}
-      {project.thumbnail ? (
-        <img
-          src={project.thumbnail}
-          alt={project.title}
-          className="w-full h-36 object-cover bg-zinc-100"
-          loading="lazy"
-        />
-      ) : (
-        <div className="w-full h-36 bg-gradient-to-br from-teal-50 to-teal-100 flex items-center justify-center shrink-0">
-          <span className="text-3xl text-teal-300">✦</span>
-        </div>
-      )}
-
-      {/* Card body */}
-      <div className="p-6 flex flex-col gap-4 flex-1">
+      <div className="flex flex-col gap-4 flex-1">
         <div className="flex-1">
           {/* Title row */}
           <div className="flex items-start justify-between gap-2 mb-2">

@@ -4,7 +4,6 @@ export interface Project {
   problem: string
   description: string
   cta?: string
-  thumbnail?: string
   tags: string[]
   link: string | null
   status: 'completed' | 'in-progress' | 'coming-soon'
@@ -32,7 +31,6 @@ export const works: Project[] = [
       'The church treasurer spent hours every month manually cross-referencing Zelle transfers against bank statements — error-prone and tedious.',
     description:
       'Built a browser-only tool that does it in seconds: fuzzy name + date + amount matching, XLSX output with diagnostic failure reasons. No backend, no data leaves the browser.',
-    thumbnail: 'https://opengraph.github.com/trashthejay/chanyang',
     tags: ['JavaScript', 'Fuzzy Matching', 'XLSX', 'PDF Parsing', 'No-backend'],
     link: 'https://github.com/trashthejay/chanyang',
     status: 'completed',
@@ -44,7 +42,6 @@ export const works: Project[] = [
       'Mint shut down and no existing app handled multi-owner finances without giving up data control.',
     description:
       'Built a self-hosted dashboard with Plaid bank sync (12,000+ banks), per-owner transaction tracking, auto-categorization rules, subscription detection, anomaly alerts, and net worth monitoring — running on our own server.',
-    thumbnail: 'https://opengraph.github.com/trashthejay/family-finance',
     tags: ['Next.js', 'Plaid API', 'SQLite', 'Drizzle ORM', 'NextAuth', 'Recharts', 'Fly.io'],
     link: 'https://github.com/trashthejay/family-finance',
     status: 'in-progress',
@@ -56,7 +53,6 @@ export const works: Project[] = [
       'Every Sunday morning, someone had to manually text 20+ people to figure out who needs a ride, which car they\'re in, and what time to pick them up — then repeat it all again after any changes.',
     description:
       'Automated the entire process: reads a Google Sheet, auto-groups riders by pickup stop across two vehicles, and sends a formatted email summary to drivers. Zero manual coordination.',
-    thumbnail: 'https://opengraph.github.com/trashthejay/ride-automation',
     tags: ['Google Apps Script', 'Automation', 'Google Sheets', 'HTML Email'],
     link: 'https://github.com/trashthejay/ride-automation',
     status: 'completed',
@@ -68,7 +64,6 @@ export const works: Project[] = [
       'Good ideas disappear because capturing them is too slow or too fragmented.',
     description:
       'Built a cross-platform app where you speak or type a thought — Claude AI instantly classifies it, connects it to related notes, and maps everything into an interactive force-directed mind map. Available on iOS, Android, and macOS.',
-    thumbnail: 'https://opengraph.github.com/trashthejay/inklings',
     tags: ['Flutter', 'Claude Haiku API', 'Riverpod', 'Drift ORM', 'Mind Map', 'Voice Input'],
     link: 'https://github.com/trashthejay/inklings',
     status: 'in-progress',
@@ -80,7 +75,6 @@ export const works: Project[] = [
       'The church had experienced professionals ready to mentor younger members — but no way to find or connect with them. Everything was word of mouth.',
     description:
       'Built a career mentorship platform with a member directory, 3-step onboarding wizard, admin approval queue, and connection requests with contact info revealed only after both sides agree.',
-    thumbnail: 'https://opengraph.github.com/trashthejay/Buzzing-Bird',
     tags: ['Next.js 14', 'Firebase', 'TypeScript', 'Tailwind CSS', 'Community App'],
     link: 'https://github.com/trashthejay/Buzzing-Bird',
     status: 'in-progress',
@@ -92,7 +86,6 @@ export const works: Project[] = [
       'Most PM portfolios are static PDFs or generic LinkedIn pages — they tell, not show.',
     description:
       'Built a live portfolio with Next.js App Router, Tailwind CSS, and Framer Motion: animated hero with cycling roles, filterable project cards, vertical experience timeline, and a working contact form via Web3Forms. Deployed on Vercel.',
-    thumbnail: 'https://opengraph.github.com/trashthejay/jae-portfolio',
     tags: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'Web3Forms', 'Vercel'],
     link: 'https://github.com/trashthejay/jae-portfolio',
     status: 'completed',
