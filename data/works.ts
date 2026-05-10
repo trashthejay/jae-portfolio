@@ -13,10 +13,10 @@ export const works: Project[] = [
     id: 'ux-cx-analysis',
     title: 'UX/CX Analysis Platform',
     description:
-      '5-step Claude Vision pipeline · A/B variant comparison · HTML & PPTX export · 35-pattern competitor library (Amazon, Apple, Target, TikTok)',
+      '5-step Claude Vision pipeline · A/B variant comparison · HTML & PPTX export · 35-pattern competitor library (Amazon, Apple, Target, TikTok) · Internal tool — reach out via the Contact tab for details.',
     tags: ['Claude API', 'Gemini', 'Next.js', 'SQLite', 'Playwright', 'A/B Testing', 'PPTX Export'],
     link: 'https://github.com/vzchung/ux-platform',
-    status: 'in-progress',
+    status: 'completed',
     private: true,
   },
   {
