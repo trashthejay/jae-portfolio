@@ -44,7 +44,7 @@ const skillGroups = [
 const education = [
   {
     school: 'New Jersey Institute of Technology',
-    degree: 'M.S. Data Science',
+    degree: 'M.S. Data Science: Machine Learning',
     detail: 'In progress · Focus: AI Applications, Machine Learning',
   },
   {
