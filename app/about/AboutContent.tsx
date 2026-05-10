@@ -45,7 +45,7 @@ const education = [
   {
     school: 'New Jersey Institute of Technology',
     degree: 'M.S. Data Science',
-    detail: 'In progress · Focus: Machine Learning, AI Applications',
+    detail: 'In progress · Focus: AI Applications, Machine Learning',
   },
   {
     school: 'Rutgers University',
