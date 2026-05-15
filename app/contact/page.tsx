@@ -4,7 +4,7 @@ import ContactContent from './ContactContent'
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Interested in collaborating or want to learn more? Get in touch with Jay.',
+  description: 'Interested in collaborating or want to learn more? Get in touch with Jae.',
 }
 
 export default function ContactPage() {

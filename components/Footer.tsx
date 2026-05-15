@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="border-t border-zinc-100 py-8 mt-auto">
       <div className="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-xs text-zinc-400">
-          © {new Date().getFullYear()} Jae Ho (Jay) Chung
+          © {new Date().getFullYear()} Jae Ho Chung
         </p>
         <div className="flex items-center gap-5">
           <a

@@ -77,7 +77,7 @@ export default function AboutContent() {
         </h1>
         <div className="max-w-2xl space-y-4 text-zinc-500 leading-relaxed">
           <p>
-            Jay is a product leader who bridges deep technical fluency with consumer product instincts.
+            Jae is a product leader who bridges deep technical fluency with consumer product instincts.
             With 15+ years across telecom, enterprise platforms, and AI, he&apos;s shipped 0→1 products at
             Verizon and driven measurable business results — including $69.2M in direct revenue in a
             single quarter.

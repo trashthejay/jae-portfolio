@@ -49,7 +49,7 @@ export default function HomeContent() {
           {...fadeUp(0.1)}
           className="text-5xl md:text-7xl font-bold tracking-tight text-zinc-900 mb-6 leading-tight"
         >
-          Jae Ho (Jay) Chung
+          Jae Ho Chung
         </motion.h1>
 
         <motion.div {...fadeUp(0.2)} className="text-2xl md:text-3xl font-medium text-zinc-700 mb-6 min-h-[2.5rem]">

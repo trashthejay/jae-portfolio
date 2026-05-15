@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Jay Chung',
-    default: 'Jay Chung — Product Manager & AI Prototyper',
+    template: '%s | Jae Chung',
+    default: 'Jae Chung — Product Manager & AI Prototyper',
   },
   description:
     'Senior Product Manager at Verizon. I prototype with AI to validate ideas fast and ship what matters.',
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'Jay Chung',
-    title: 'Jay Chung — Product Manager & AI Prototyper',
+    siteName: 'Jae Chung',
+    title: 'Jae Chung — Product Manager & AI Prototyper',
     description:
       'Senior Product Manager at Verizon. I prototype with AI to validate ideas fast and ship what matters.',
   },

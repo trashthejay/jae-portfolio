@@ -27,7 +27,7 @@ export default function Nav() {
           href="/"
           className="text-sm font-semibold tracking-widest uppercase text-zinc-900 hover:text-teal-600 transition-colors"
         >
-          Jay Chung
+          Jae Chung
         </Link>
 
         {/* Desktop links */}
