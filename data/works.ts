@@ -91,6 +91,17 @@ export const works: Project[] = [
     status: 'completed',
   },
   {
+    id: 'llm-wiki',
+    title: 'Personal LLM Wiki',
+    problem:
+      'Links get bookmarked and forgotten, screenshots pile up, and useful knowledge never makes it into a searchable, lasting format.',
+    description:
+      'Built a PWA where you paste a URL or share a screenshot — Gemini Flash analyzes the content, suggests the right Notion page to update, and stores structured knowledge with version history. Triggers from the iOS Share Sheet so capture happens in the moment.',
+    tags: ['Gemini API', 'Notion API', 'PWA', 'iOS Shortcut', 'GitHub Pages'],
+    link: 'https://github.com/trashthejay/llm-wiki',
+    status: 'in-progress',
+  },
+  {
     id: 'next-project',
     title: 'Next Project',
     problem: 'Currently building with Claude Code. Stay tuned.',
