@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import PageWrapper from '@/components/PageWrapper'
@@ -75,6 +76,26 @@ export default function UxPlatformContent() {
             ))}
           </div>
         </motion.div>
+
+        <motion.figure
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
+          className="mb-12"
+        >
+          <Image
+            src="/ux-platform-dashboard.webp"
+            alt="UX/CX Analysis Platform dashboard showing completed analyses with overall scores and per-dimension ratings"
+            width={2000}
+            height={1294}
+            priority
+            sizes="(min-width: 768px) 768px, 100vw"
+            className="w-full h-auto rounded-xl border border-zinc-200 shadow-sm"
+          />
+          <figcaption className="text-xs text-zinc-400 mt-2">
+            The dashboard: every analysis is scored overall and across four dimensions, with history and re-run built in.
+          </figcaption>
+        </motion.figure>
 
         <section className="mb-12">
           <h2 className="text-xl font-semibold text-zinc-900 mb-4">What it does</h2>
