@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import type { Project } from '@/data/works'
 
@@ -99,6 +100,14 @@ export default function WorkCard({ project }: { project: Project }) {
           >
             View Project →
           </a>
+        )}
+        {project.detailsHref && (
+          <Link
+            href={project.detailsHref}
+            className="text-sm text-teal-600 hover:text-teal-700 font-medium transition-colors self-start"
+          >
+            View About →
+          </Link>
         )}
         {project.link && project.private && (
           <span className="flex items-center gap-1.5 text-sm text-zinc-400 self-start">

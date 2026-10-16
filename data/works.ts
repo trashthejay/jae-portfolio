@@ -4,6 +4,7 @@ export interface Project {
   problem: string
   description: string
   cta?: string
+  detailsHref?: string
   tags: string[]
   link: string | null
   status: 'completed' | 'in-progress' | 'coming-soon'
@@ -19,6 +20,7 @@ export const works: Project[] = [
     description:
       'Built an internal AI tool that scores any digital product page in minutes — 5-step Claude Vision pipeline, A/B variant comparison, 35-pattern competitor library (Amazon, Apple, Target, TikTok), HTML & PPTX export.',
     cta: 'Internal tool — reach out via the Contact tab for details.',
+    detailsHref: '/works/ux-platform',
     tags: ['Claude API', 'Gemini', 'Next.js', 'SQLite', 'Playwright', 'A/B Testing', 'PPTX Export'],
     link: 'https://github.com/vzchung/ux-platform',
     status: 'completed',
