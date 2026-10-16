@@ -71,18 +71,6 @@ export default function WorkCard({ project }: { project: Project }) {
             <p className="text-sm text-zinc-500 leading-relaxed">{project.description}</p>
           )}
 
-          {/* About: key capabilities */}
-          {project.about && (
-            <div className="mt-3">
-              <p className="text-xs font-semibold uppercase tracking-wide text-zinc-400 mb-1.5">About</p>
-              <ul className="list-disc pl-4 space-y-1 text-sm text-zinc-500 leading-relaxed">
-                {project.about.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-
           {/* Optional callout (e.g. internal tool CTA) */}
           {project.cta && (
             <p className="text-xs text-teal-600 font-medium mt-2">{project.cta}</p>
