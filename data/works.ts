@@ -3,6 +3,7 @@ export interface Project {
   title: string
   problem: string
   description: string
+  about?: string[]
   cta?: string
   tags: string[]
   link: string | null
@@ -18,6 +19,14 @@ export const works: Project[] = [
       'Evaluating product page UX at Verizon meant weeks of manual review cycles.',
     description:
       'Built an internal AI tool that scores any digital product page in minutes — 5-step Claude Vision pipeline, A/B variant comparison, 35-pattern competitor library (Amazon, Apple, Target, TikTok), HTML & PPTX export.',
+    about: [
+      'Analyze any URL or screenshot — the platform captures and scores the page automatically.',
+      '5-call Claude Vision pipeline: brand compliance → UX heuristics → conversion → competitive benchmarking → synthesis, with multi-model consensus from Gemini.',
+      'A/B comparison mode: upload two variants side by side and get a diff analysis with a winner recommendation.',
+      'Export a self-contained HTML report or a 10-slide PPTX deck, ready to share.',
+      'History & versioning: every analysis is stored so you can re-run and compare over time.',
+      'Competitor pattern library: 35 seeded patterns from Amazon, Apple, Target, Best Buy, TikTok, Instagram, Mercari, and more.',
+    ],
     cta: 'Internal tool — reach out via the Contact tab for details.',
     tags: ['Claude API', 'Gemini', 'Next.js', 'SQLite', 'Playwright', 'A/B Testing', 'PPTX Export'],
     link: 'https://github.com/vzchung/ux-platform',
