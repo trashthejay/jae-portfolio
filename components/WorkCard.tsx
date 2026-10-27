@@ -109,7 +109,7 @@ export default function WorkCard({ project }: { project: Project }) {
             View About →
           </Link>
         )}
-        {project.link && project.private && (
+        {project.private && (
           <span className="flex items-center gap-1.5 text-sm text-zinc-400 self-start">
             <LockIcon />
             Private / Internal

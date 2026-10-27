@@ -27,6 +27,20 @@ export const works: Project[] = [
     private: true,
   },
   {
+    id: 'stock-monitor',
+    title: 'Stock Monitor',
+    problem:
+      'Thousands of items to watch and no one with time to check them by hand — wrong stock info was surfacing only after customers or partners noticed.',
+    description:
+      'Built a proactive monitor that checks what the shopping site shows for every item each morning at 6 AM, flags out-of-stock items in a dated report, and gives the team a searchable dashboard. Runs in about 10 minutes.',
+    cta: 'Internal tool — reach out via the Contact tab for details.',
+    detailsHref: '/works/stock-monitor',
+    tags: ['Claude Code', 'Google Apps Script', 'Python', 'Automation', 'Dashboard'],
+    link: null,
+    status: 'completed',
+    private: true,
+  },
+  {
     id: 'donation-matcher',
     title: 'Donation Matcher',
     problem:
